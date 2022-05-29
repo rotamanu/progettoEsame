@@ -20,7 +20,7 @@ if($row=$result->fetch_assoc()){
         echo "<tr>";
         echo "<td>Numero matricola: ".$_SESSION['matricola_utente']."</td>";
         echo "</tr>";
-        echo "<td><img src=".$row['foto']." width=\"450px\" height=\"450px\"></td>";
+        echo "<td><img src=".$row['disegno']." width=\"450px\" height=\"450px\"></td>";
         echo "<td></td>";
         echo "<td></td>";
         echo "</tr>";
