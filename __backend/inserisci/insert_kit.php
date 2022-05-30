@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../style.css">
     </head>
     <body>
-      <form method="post" id="insert" action="./inserisci.php" enctype="multipart/form-data">
+      <form method="post" id="insert" action="./inserisci.php">
         <table border=1>
             <tr>
                 <th>Disegno</th>
@@ -22,7 +22,24 @@
               <td><input type="text" id="codice esterno" placeholder="codice esterno" name="codice esterno" form="insert" ></td>
               <td> - A - </td>
               <td><input type="text" id="componente a" placeholder="componente a" name="componente a" form="insert" ></td>
-              <td><input type="text" id="marca" placeholder="marca" name="marca"  form="insert" ></td>
+              <td>
+                <?php
+                  $my_database=new mysqli("localhost", "root", "", "rotaspa");
+                  $stmt=$my_database->prepare("SELECT distinct marca FROM prodotti order by marca");
+                  //$codice=$_POST['codice'];
+                  //$stmt->bind_param('s', $codice);
+                  $stmt->execute();
+                  $result=$stmt->get_result();
+                  //var_dump($result->fetch_all());
+                  echo "<div style=\"width: 100%; height: 100%;\">";
+                  echo "<select style=\"width: 100%; height: 100%;\" id=\"marca\" placeholder=\"marca\" name=\"marca\"  form=\"insert\" >";
+                  while($row=$result->fetch_assoc()){
+                          echo "<option value=\"".$row['marca']."\">".$row['marca']."</option>";
+                        }
+                  echo "</select>";
+                  echo "</div>";
+                ?>
+                </td>
               <td><input type="text" id="level" placeholder="level" name="level"  form="insert" ></td>
             </tr>
             <tr>
@@ -38,7 +55,24 @@
               <td rowspan="2"><input type="text" id="foto" placeholder="foto" name="foto"  form="insert" ></td>
               <td> - C - </td>
               <td><input type="text" id="componente c" placeholder="componente c" name="componente c"  form="insert" ></td>
-              <td rowspan="2"><input type="text" id="montato_su" placeholder="montato_su" name="montato_su"  form="insert" ></td>
+              <td rowspan="2">
+                <?php
+                  $my_database=new mysqli("localhost", "root", "", "rotaspa");
+                  $stmt=$my_database->prepare("SELECT distinct montato_su FROM prodotti order by montato_su");
+                  //$codice=$_POST['codice'];
+                  //$stmt->bind_param('s', $codice);
+                  $stmt->execute();
+                  $result=$stmt->get_result();
+                  //var_dump($result->fetch_all());
+                  echo "<div style=\"width: 100%; height: 100%;\">";
+                  echo "<select style=\"width: 100%; height: 100%;\" id=\"montato_su\" placeholder=\"montato_su\" name=\"montato_su\"  form=\"insert\" >";
+                  while($row=$result->fetch_assoc()){
+                          echo "<option value=\"".$row['montato_su']."\">".$row['montato_su']."</option>";
+                        }
+                  echo "</select>";
+                  echo "</div>";
+                ?>
+                </td>
               <td rowspan="2"><input type="text" id="level" placeholder="level" name="level"  form="insert" ></td>
             </tr>
             <tr>
@@ -48,7 +82,7 @@
             <tr>
               <td colspan="3">
                 <div style="width: 100%; height: 100%;">
-                <input type="submit" style="width: 100%; height: 100%;"type="submit" name="login" form="insert" value="Inserisci un kit"></input>
+                <input type="submit" style="width: 100%; height: 100%;" type="submit" name="login" form="insert" value="Inserisci un kit"></input>
                 </div>
               </td>
               <td colspan="4">
