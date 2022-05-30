@@ -48,17 +48,17 @@ CREATE TABLE IF NOT EXISTS `prodotti` (
 --
 
 INSERT INTO `prodotti` (`codice`, `codice_esterno`, `componente_a`, `componente_b`, `componente_c`, `componente_d`, `disegno`, `foto`, `montato_su`, `marca`, `level`, `anteriore`) VALUES
-('0000', '15468ab', '1', '2', '3', '4', '../../___disegni_tecnici_esame/disegno_1.jpg', '0', '5', 'Toyota', '5', '9'),
-('0001', '15487bf', '1', '2', '3', '4', '../../___disegni_tecnici_esame/disegno_2.jpg', '0', '4', 'Ferrari', '4', '9'),
-('0002', '15499cf', '1', '2', '3', '4', '../../___disegni_tecnici_esame/disegno_3.jpg', '0', '5', 'Porche', '5', '6'),
-('0003', '65414we', '1', '2', '3', '4', '../../___disegni_tecnici_esame/disegno_4.jpg', '0', '6', 'Bmw', '9', '6'),
-('0004', '51465aa', '1', '2', '3', '4', '../../___disegni_tecnici_esame/disegno_5.jpg', '0', '4', 'Bmw', '8', '8'),
-('0005', '84198qq', '1', '2', '3', '4', '../../___disegni_tecnici_esame/disegno_6.jpg', '0', '7', 'Audi', '2', '5'),
-('0006', '65141fz', '1', '2', '3', '4', '../../___disegni_tecnici_esame/disegno_7.jpg', '0', '8', 'Lancia', '3', '8'),
-('0007', '74897ps', '1', '2', '3', '4', '../../___disegni_tecnici_esame/disegno_8.jpg', '0', '9', 'Fiat', '1', '7'),
-('0008', '14981ld', '1', '2', '3', '4', '../../___disegni_tecnici_esame/disegno_9.jpg', '0', '8', 'Fiat', '4', '7'),
-('0009', '74198br', '1', '2', '3', '4', '../../___disegni_tecnici_esame/disegno_10.jpg', '0', '7', 'generico', '4', '9'),
-('0010', '74987hs', '1', '2', '3', '4', '../../___disegni_tecnici_esame/disegno_11.jpg', '0', '5', 'generico', '7', '3');
+('1111', '15468ab', '1', '1', '1', '1', '../../___disegni_tecnici_esame/disegno_1.jpg', '../../___disegni_tecnici_esame/disegno_12.jpg', 'SUV', 'Toyota', 'A', '1'),
+('2222', '15487bf', '2', '2', '2', '2', '../../___disegni_tecnici_esame/disegno_2.jpg', '../../___disegni_tecnici_esame/disegno_13.jpg', 'CAR', 'Ferrari', 'A', '1'),
+('3333', '15499cf', '3', '3', '3', '3', '../../___disegni_tecnici_esame/disegno_3.jpg', '../../___disegni_tecnici_esame/disegno_14.jpg', 'MONO', 'Porche', 'B', '0'),
+('4444', '65414we', '4', '4', '4', '4', '../../___disegni_tecnici_esame/disegno_4.jpg', '../../___disegni_tecnici_esame/disegno_15.jpg', 'MOTO', 'Bmw', 'B', '0'),
+('5555', '51465aa', '5', '5', '5', '5', '../../___disegni_tecnici_esame/disegno_5.jpg', '../../___disegni_tecnici_esame/disegno_16.jpg', 'AUTO', 'Bmw', 'B', '0'),
+('6666', '84198qq', '6', '6', '6', '6', '../../___disegni_tecnici_esame/disegno_6.jpg', '../../___disegni_tecnici_esame/disegno_17.jpg', 'MOTO', 'Audi', 'N', '0'),
+('7777', '65141fz', '7', '7', '7', '7', '../../___disegni_tecnici_esame/disegno_7.jpg', '../../___disegni_tecnici_esame/disegno_18.jpg', 'AUTO', 'Lancia', 'N', '1'),
+('8888', '74897ps', '8', '8', '8', '8', '../../___disegni_tecnici_esame/disegno_8.jpg', '../../___disegni_tecnici_esame/disegno_19.jpg', 'MONO', 'Fiat', 'N', '1'),
+('9999', '14981ld', '9', '9', '9', '9', '../../___disegni_tecnici_esame/disegno_9.jpg', '../../___disegni_tecnici_esame/disegno_20.jpg', 'PULL', 'Fiat', 'A', '1'),
+('1010', '74198br', '10', '10', '10', '10', '../../___disegni_tecnici_esame/disegno_10.jpg', '../../___disegni_tecnici_esame/disegno_21.jpg', 'MOTO', 'generico', 'A', '0'),
+('1110', '74987hs', '11', '11', '11', '11', '../../___disegni_tecnici_esame/disegno_11.jpg', '../../___disegni_tecnici_esame/disegno_22.jpg', 'MOTO', 'generico', 'A', '0');
 
 -- --------------------------------------------------------
 
