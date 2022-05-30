@@ -26,11 +26,8 @@
                 <?php
                   $my_database=new mysqli("localhost", "root", "", "rotaspa");
                   $stmt=$my_database->prepare("SELECT distinct marca FROM prodotti order by marca");
-                  //$codice=$_POST['codice'];
-                  //$stmt->bind_param('s', $codice);
                   $stmt->execute();
                   $result=$stmt->get_result();
-                  //var_dump($result->fetch_all());
                   echo "<div style=\"width: 100%; height: 100%;\">";
                   echo "<select style=\"width: 100%; height: 100%;\" id=\"marca\" placeholder=\"marca\" name=\"marca\"  form=\"insert\" required>";
                   while($row=$result->fetch_assoc()){
@@ -59,11 +56,8 @@
                 <?php
                   $my_database=new mysqli("localhost", "root", "", "rotaspa");
                   $stmt=$my_database->prepare("SELECT distinct montato_su FROM prodotti order by montato_su");
-                  //$codice=$_POST['codice'];
-                  //$stmt->bind_param('s', $codice);
                   $stmt->execute();
                   $result=$stmt->get_result();
-                  //var_dump($result->fetch_all());
                   echo "<div style=\"width: 100%; height: 100%;\">";
                   echo "<select style=\"width: 100%; height: 100%;\" id=\"montato_su\" placeholder=\"montato_su\" name=\"montato_su\"  form=\"insert\" required>";
                   while($row=$result->fetch_assoc()){
