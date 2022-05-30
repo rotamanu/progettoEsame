@@ -17,7 +17,7 @@
                 <th>Level</th>
             </tr>
             <tr>
-              <td><input type="file" id="upload" name="disegno" form="insert" required</td>
+              <td><input type="test" id="upload" placeholder="disegno" name="disegno" form="insert" required</td>
               <td><input type="text" id="codice" placeholder="codice" name="codice"  form="insert" required></td>
               <td><input type="text" id="codice esterno" placeholder="codice esterno" name="codice esterno" form="insert" required></td>
               <td> - A - </td>
