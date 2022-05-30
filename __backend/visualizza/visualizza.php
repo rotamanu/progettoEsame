@@ -1,5 +1,14 @@
+<?php session_start(); ?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amministratore</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="../../style.css">
+  </head>
+  <body id="disegnobg">
 <?php
-session_start();
 $my_database=new mysqli("localhost", "root", "", "rotaspa");
 
 $stmt=$my_database->prepare("SELECT * FROM prodotti WHERE codice=?");
@@ -8,7 +17,7 @@ $stmt->bind_param('s', $codice);
 $stmt->execute();
 $result=$stmt->get_result();
 //var_dump($result->fetch_all());
-echo "<table border='1' >";
+echo "<table border='1'>";
 if($row=$result->fetch_assoc()){
 
   //variable with image path by database
@@ -34,5 +43,6 @@ if($row=$result->fetch_assoc()){
         echo "</tr>";
 }
 echo "</table>";
-
 ?>
+</body>
+</html>

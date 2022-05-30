@@ -1,4 +1,4 @@
-html,body {
+body {
     background-color: red;
     padding: 10px  20px;
     font: 14px 'Open sans', sans-serif;
@@ -36,6 +36,8 @@ button {
   	text-transform: uppercase;
 }
 td {
-  background-color: red;
   color: Black;
+}
+#disegnobg{
+  background-color: grey;
 }
