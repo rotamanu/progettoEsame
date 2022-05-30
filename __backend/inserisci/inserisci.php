@@ -19,6 +19,8 @@ $marca=$_POST['marca'];
 $level=$_POST['level'];
 $anteriore=$_POST['anteriore'];
 
+//echo $disegno;
+
 try{
 $stmt=$my_database->prepare("INSERT INTO prodotti (codice, codice_esterno, componente_a, componente_b, componente_c, componente_d, disegno, foto, montato_su, marca, level, anteriore) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
 

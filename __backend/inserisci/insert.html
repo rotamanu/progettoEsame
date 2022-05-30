@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../style.css">
     </head>
     <body>
-      <form method="post" id="insert" action="./inserisci.php">
+      <form method="post" id="insert" action="./inserisci.php" enctype="multipart/form-data">
         <table border=1>
             <tr>
                 <th>Disegno</th>
@@ -17,33 +17,33 @@
                 <th>Level</th>
             </tr>
             <tr>
-              <td><input type="text" id="disegno" placeholder="disegno" name="disegno" form="insert" required></td>
-              <td><input type="text" id="codice" placeholder="codice" name="codice"  form="insert" required></td>
-              <td><input type="text" id="codice esterno" placeholder="codice esterno" name="codice esterno" form="insert" required></td>
+              <td><input type="file" id="upload" name="disegno" form="insert"></td>
+              <td><input type="text" id="codice" placeholder="codice" name="codice"  form="insert" ></td>
+              <td><input type="text" id="codice esterno" placeholder="codice esterno" name="codice esterno" form="insert" ></td>
               <td> - A - </td>
-              <td><input type="text" id="componente a" placeholder="componente a" name="componente a" form="insert" required></td>
-              <td><input type="text" id="marca" placeholder="marca" name="marca"  form="insert" required></td>
-              <td><input type="text" id="level" placeholder="level" name="level"  form="insert" required></td>
+              <td><input type="text" id="componente a" placeholder="componente a" name="componente a" form="insert" ></td>
+              <td><input type="text" id="marca" placeholder="marca" name="marca"  form="insert" ></td>
+              <td><input type="text" id="level" placeholder="level" name="level"  form="insert" ></td>
             </tr>
             <tr>
               <th>Foto</th>
               <td rowspan="3"></td>
               <td rowspan="3"></td>
               <td> - B - </td>
-              <td><input type="text" id="componente b" placeholder="componente b" name="componente b" form="insert" required></td>
+              <td><input type="text" id="componente b" placeholder="componente b" name="componente b" form="insert" ></td>
               <th>Montato_su</th>
               <th>Anteriore</th>
             </tr>
             <tr>
-              <td rowspan="2"><input type="text" id="foto" placeholder="foto" name="foto"  form="insert" required></td>
+              <td rowspan="2"><input type="text" id="foto" placeholder="foto" name="foto"  form="insert" ></td>
               <td> - C - </td>
-              <td><input type="text" id="componente c" placeholder="componente c" name="componente c"  form="insert" required></td>
-              <td rowspan="2"><input type="text" id="montato_su" placeholder="montato_su" name="montato_su"  form="insert" required></td>
-              <td rowspan="2"><input type="text" id="level" placeholder="level" name="level"  form="insert" required></td>
+              <td><input type="text" id="componente c" placeholder="componente c" name="componente c"  form="insert" ></td>
+              <td rowspan="2"><input type="text" id="montato_su" placeholder="montato_su" name="montato_su"  form="insert" ></td>
+              <td rowspan="2"><input type="text" id="level" placeholder="level" name="level"  form="insert" ></td>
             </tr>
             <tr>
               <td> - D - </td>
-              <td><input type="text" id="componente d" placeholder="componente d" name="componente d"  form="insert" required></td>
+              <td><input type="text" id="componente d" placeholder="componente d" name="componente d"  form="insert" ></td>
             </tr>
             <tr>
               <td colspan="3">
