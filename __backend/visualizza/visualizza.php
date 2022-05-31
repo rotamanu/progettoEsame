@@ -15,7 +15,7 @@
       $stmt->bind_param('s', $codice);
       $stmt->execute();
       $result=$stmt->get_result();
-      echo "<table border='6' bgcolor='white'>";
+      echo "<table border='6' bgcolor='white'align='center'>";
       if($row=$result->fetch_assoc()){
         //variable with image path by database
         //$img=realpath($row['foto']);
