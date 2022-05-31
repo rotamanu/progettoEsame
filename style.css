@@ -27,7 +27,7 @@ input {
 }
 button {
     font: 14px 'Open Sans', sans-serif;
-    background-color: red;
+    background-color: grey;
     color: Black;
     padding: 10px  20px;
     cursor: pointer;
@@ -35,9 +35,10 @@ button {
     margin-top: 20px;
   	text-transform: uppercase;
 }
-td {
-  color: Black;
-}
+
 #disegnobg{
   background-color: red;
+}
+#tradmin{
+  background-color: white;
 }
