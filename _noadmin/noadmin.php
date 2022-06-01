@@ -20,13 +20,14 @@
           $stmt->execute();
           $result=$stmt->get_result();
           echo "<div style=\"width: 100%; height: 100%;\">";
-          echo "<select style=\"width: 100%; height: 100%;\" id=\"montato_su\" placeholder=\"montato_su\" name=\"montato_su\"  form=\"stampa\" required>";
+          echo "<select style=\"width: 100%; height: 100%;\" placeholder=\"stampa\" name=\"codice\" id=\"codice\" form=\"stampa\" required>";
           while($row=$result->fetch_assoc()){
                   echo "<option value=\"".$row['codice']."\">".$row['codice']." - ".$row['marca']." - ".$row['anteriore']."</option>";
                 }
           echo "</select>";
           echo "</div>";
         ?>
+        <input type="text" placeholder="Seleziona qta etichette" name="num_etichette" id="num_etichette" form="stampa" required>
         <input type="submit" name="login" value="stampa" form="stampa"/>
       </form>
 
