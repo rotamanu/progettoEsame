@@ -17,7 +17,7 @@ if($row=$result->fetch_assoc()){
       header("Location: ../_admin/admin.html" );
       break;
     case 1:
-      header("Location: ../_noadmin/noadmin.html" );
+      header("Location: ../_noadmin/noadmin.php" );
       break;
     default:
       header("Location: ../index.html" );
