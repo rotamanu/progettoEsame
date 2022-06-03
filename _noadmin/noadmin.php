@@ -13,7 +13,7 @@
       </form>
 
       <form method="post" action="../__backend/stampa/test.php" id="stampa">
-        <h1>Stampa etichetta</h1>
+        <h1>Stampa Etichetta</h1>
         <?php
           $my_database=new mysqli("localhost", "root", "", "rotaspa");
           $stmt=$my_database->prepare("SELECT distinct codice, marca, anteriore FROM prodotti order by codice");
@@ -32,7 +32,7 @@
       </form>
 
       <form method="post" action="../index.html">
-        <h1>torna alla home</h1>
+        <h1>Torna alla Home</h1>
         <button type="submit" name="login">indietro</button>
       </form>
     </body>
