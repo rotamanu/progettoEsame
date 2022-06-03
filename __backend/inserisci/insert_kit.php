@@ -86,6 +86,9 @@
               </div>
             </td>
             </tr>
+            <tr>
+              <td colspan="6"><a href="../../_admin/admin.html"><div align="center">Indietro</div></a></td>
+            </tr>
         </table>
       </form>
     </div>
