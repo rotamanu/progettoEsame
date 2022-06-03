@@ -11,8 +11,8 @@ $result=$stmt->get_result();
 $row=$result->fetch_assoc();
 // Print labels
 $num_etichette=$_POST['num_etichette'];
-for($i=1;$i<=5;$i++) {
-    $text = sprintf("%s\n%s\n%s\n%s %s, %s", $row['codice'], $row['codice_esterno'], $row['montato_su'], $row['anteriore'], $row['marca'], 'MADE IN ITALY');
+for($i=1;$i<=$num_etichette;$i++) {
+    $text = sprintf("Cod. %s\nC.Es. %s\nMounted on: %s\n%s Marca: %s; %s", $row['codice'], $row['codice_esterno'], $row['montato_su'], $row['anteriore'], $row['marca'], 'MADE IN ITALY');
     $pdf->Add_Label($text);
 }
 ob_start();
