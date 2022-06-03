@@ -3,9 +3,10 @@
     <head>
         <title>Amministratore</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
+      <div id="page">
       <form method="post" id="insert" action="./inserisci.php">
         <table border=1>
             <tr>
@@ -87,5 +88,6 @@
             </tr>
         </table>
       </form>
+    </div>
     </body>
 </html>
