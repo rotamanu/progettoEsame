@@ -18,7 +18,7 @@
                 <th>Level</th>
             </tr>
             <tr>
-              <td><input type="test" id="upload" placeholder="disegno" name="disegno" form="insert" required</td>
+              <td><input type="file" id="upload" placeholder="disegno" name="disegno" form="insert" required</td>
               <td><input type="text" id="codice" placeholder="codice" name="codice"  form="insert" required></td>
               <td><input type="text" id="codice esterno" placeholder="codice esterno" name="codice esterno" form="insert" required></td>
               <td> - A - </td>
@@ -50,7 +50,7 @@
               <th>Anteriore</th>
             </tr>
             <tr>
-              <td rowspan="2"><input type="text" id="foto" placeholder="foto" name="foto"  form="insert" required></td>
+              <td rowspan="2"><input type="file" id="foto" placeholder="foto" name="foto"  form="insert" required></td>
               <td> - C - </td>
               <td><input type="text" id="componente c" placeholder="componente c" name="componente c"  form="insert" required></td>
               <td rowspan="2">

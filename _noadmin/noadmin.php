@@ -27,7 +27,7 @@
           echo "</select>";
           echo "</div>";
         ?>
-        <input type="text" placeholder="Seleziona qta etichette" name="num_etichette" id="num_etichette" form="stampa" required>
+        <input type="number" min="1" max="1000" placeholder="Seleziona qta etichette" name="num_etichette" id="num_etichette" form="stampa" required>
         <input type="submit" name="login" value="stampa" form="stampa"/>
       </form>
 
