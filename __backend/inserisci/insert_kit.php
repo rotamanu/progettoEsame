@@ -3,6 +3,7 @@
     <head>
         <title>Amministratore</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+        <link rel="stylesheet" href="../style.css">
     </head>
     <body>
       <form method="post" id="insert" action="./inserisci.php">
