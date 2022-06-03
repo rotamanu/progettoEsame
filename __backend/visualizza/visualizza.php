@@ -26,9 +26,14 @@
   $_SESSION['marca']=$row['marca'];
   $_SESSION['level']=$row['level'];
   $_SESSION['anteriore']=$row['anteriore'];
-?>
-<div id="page"><table border=1><tr><th>Disegno</th><th>Codice</th><th>Valore</th><th>Valore</th><th>Valore</th></tr>
+  ?>
+  <div id="page"><table border=1><tr><th>Foto</th><th>Disegno</th><th>Valore</th><th>Valore</th><th>Valore</th><th>Valore</th></tr>
     <tr>
+      <td rowspan="3">
+        <div style="width: 100%; height: 100%;">
+          <img style="width: 100%; height: 100%;" src="<?php echo $_SESSION['foto']; ?>" >
+        </div>
+      </td>
       <td rowspan="3">
         <div style="width: 100%; height: 100%;">
           <img style="width: 100%; height: 100%;" src="<?php echo $_SESSION['disegno']; ?>" >
@@ -43,20 +48,14 @@
     </tr>
     <tr>
       <td>Cod Esterno</td><td><?php echo $_SESSION['codice_esterno']; ?></td>
-      <td>-B-</td><td><?php echo $_SESSION['componente_b']; ?></td>
-    </tr>
-    <tr><th></th><td></td><td></td></tr>
-    <tr>
-      <td rowspan="2"><img src="<?php echo $_SESSION['foto']; ?>" ></td>
-      <td>-D-</td><td><?php echo $_SESSION['componente_d']; ?></td>
-      <td>Cod Esterno</td><td><?php echo $_SESSION['codice_esterno']; ?></td>
+      <td>-C-</td><td><?php echo $_SESSION['componente_c']; ?></td>
     </tr>
     <tr>
-      <td>Marca: </td><td><?php echo $_SESSION['marca']; ?></td>
-      <td>Cod Esterno</td><td><?php echo $_SESSION['codice_esterno']; ?></td>
+      <td>Codice: </td><td><?php echo $_SESSION['codice']; ?></td>
+      <td colspan="4" rowspan="2"><a href="../../_noadmin/noadmin.php"><div align="center">Indietro</div></a></td>
     </tr>
     <tr>
-      <td colspan="5">A</td>
+      <td>Cod Esterno: </td><td><?php echo $_SESSION['codice_esterno']; ?></td>
     </tr>
   </table>
 </div>
