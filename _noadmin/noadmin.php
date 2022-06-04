@@ -6,9 +6,21 @@
         <link rel="stylesheet" href="../style.css">
     </head>
     <body>
-      <form method="post" action="../__backend/visualizza/visualizza.php">
+      <form method="post" action="../__backend/visualizza/visualizza.php" id="codice">
         <h1>Visualizzare un kit</h1>
-        <input type="text" id="codice" placeholder="codice" name="codice">
+        <?php
+          $my_database=new mysqli("localhost", "root", "", "rotaspa");
+          $stmt=$my_database->prepare("SELECT distinct codice FROM prodotti");
+          $stmt->execute();
+          $result=$stmt->get_result();
+          echo "<div style=\"width: 100%; height: 100%;\">";
+          echo "<select style=\"width: 100%; height: 100%;\" placeholder=\"stampa\" name=\"codice\" id=\"codice\" form=\"codice\" required>";
+          while($row=$result->fetch_assoc()){
+                  echo "<option value=\"".$row['codice']."\">".$row['codice']."</option>";
+                }
+          echo "</select>";
+          echo "</div>";
+        ?>
         <button type="submit" name="login">Visualizza</button>
       </form>
 
