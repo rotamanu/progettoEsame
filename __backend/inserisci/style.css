@@ -1,0 +1,14 @@
+#page{
+  font: 35px 'Open sans', sans-serif;
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../__IMG/machine.gif");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+#insert{
+  background-color: Gainsboro;
+}

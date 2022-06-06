@@ -1,13 +1,19 @@
 body {
-    background-color: red;
-    padding: 10px  20px;
+    /*background-color: red;
+    padding: 10px  20px;*/
     font: 14px 'Open sans', sans-serif;
-    color: gray;
+    /*color: gray;*/
+    background-image: url("./__IMG/machine.gif");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    margin-left: auto;
+    margin-top: auto;
+    display: block;
 }
 h1 {
     margin: 0;
     margin-bottom: 30px;
-	font-size: 30px;
+	   font-size: 30px;
 }
 form {
     padding: 30px;
@@ -37,8 +43,18 @@ button {
 }
 
 #disegnobg{
-  background-color: red;
+  /*background-color: red;*/
 }
 #tradmin{
-  background-color: white;
+  /*background-color: white;*/
+}
+#page{
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#insert{
+
 }
