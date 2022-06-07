@@ -27,7 +27,7 @@
   $_SESSION['level']=$row['level'];
   $_SESSION['anteriore']=$row['anteriore'];
   ?>
-  <div id="page"><table border=1><tr><th>Foto</th><th>Disegno</th><th>Valore</th><th>Valore</th><th>Valore</th><th>Valore</th></tr>
+  <div id="page"><table id="insert" border=1><tr><th>Foto</th><th>Disegno</th><th>Valore</th><th>Valore</th><th>Valore</th><th>Valore</th></tr>
     <tr>
       <td rowspan="3">
         <div>
