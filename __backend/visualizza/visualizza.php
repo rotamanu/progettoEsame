@@ -27,37 +27,64 @@
   $_SESSION['level']=$row['level'];
   $_SESSION['anteriore']=$row['anteriore'];
   ?>
-  <div id="page"><table id="insert" border=1><tr><th>Foto</th><th>Disegno</th><th>Valore</th><th>Valore</th><th>Valore</th><th>Valore</th></tr>
-    <tr>
-      <td rowspan="3">
-        <div>
-          <img src="<?php echo $_SESSION['foto']; ?>" >
-        </div>
-      </td>
-      <td rowspan="3">
-        <div>
-          <img src="<?php echo $_SESSION['disegno']; ?>" >
-        </div>
-      </td>
-      <td>Codice</td><td><?php echo $_SESSION['codice']; ?></td>
-      <td>-A-</td><td><?php echo $_SESSION['componente_a']; ?></td>
+  <div id="page"><table border=3>
+      <tr>
+          <th>Disegno</th>
+          <th>Codice</th>
+          <th>Codice esterno</th>
+      </tr>
+      <tr >
+        <td rowspan="6"><img src="<?php echo $_SESSION['disegno']; ?>"</td>
+
+        <td><?php echo $_SESSION['codice'];?></td>
+        <td><?php echo $_SESSION['codice_esterno'];?></td>
     </tr>
     <tr>
-      <td>Cod Esterno</td><td><?php echo $_SESSION['codice_esterno']; ?></td>
-      <td>-B-</td><td><?php echo $_SESSION['componente_b']; ?></td>
+        <th colspan="2">Componenti</th>
     </tr>
     <tr>
-      <td>Cod Esterno</td><td><?php echo $_SESSION['codice_esterno']; ?></td>
-      <td>-C-</td><td><?php echo $_SESSION['componente_c']; ?></td>
+        <th> - A - </th><td><?php echo $_SESSION['componente_a'];?></td>
     </tr>
     <tr>
-      <td>Codice: </td><td><?php echo $_SESSION['codice']; ?></td>
-      <td colspan="4" rowspan="2"><a href="../../_noadmin/noadmin.php"><div align="center">Indietro</div></a></td>
+        <th> - B - </th><td><?php echo $_SESSION['componente_b'];?></td>
     </tr>
-    <tr>
-      <td>Cod Esterno: </td><td><?php echo $_SESSION['codice_esterno']; ?></td>
-    </tr>
+      <tr>
+        <th> - C - </th>
+        <td><?php echo $_SESSION['componente_c'];?></td>
+      </tr>
+      <tr>
+        <th> - D - </th>
+        <td><?php echo $_SESSION['componente_d'];?></td>
+        </tr>
+        <tr>
+          <th>Foto</th>
+          <th>Marca</th>
+         <th>Montato_su</th>
+        </tr>
+        <tr><td rowspan="6"><img src="<?php echo $_SESSION['foto']; ?>"</td>
+          <td><?php echo $_SESSION['marca'];?></td>
+          <td><?php echo $_SESSION['montato_su'];?></td>
+             </tr>
+             <tr>
+                <th>Level</th>
+                <th>Anteriore</th>
+              </tr>
+              <tr>
+                <td><?php echo $_SESSION['level'];?></td>
+                <td><?php echo $_SESSION['anteriore'];?></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <div style="width: 100%; height: 100%;">
+          <input type="submit" style="width: 100%; height: 100%;" type="submit" name="login" form="insert" value="Modifica kit"></input>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6"><a href="../../_admin/admin.html"><div align="center">Indietro</div></a></td>
+      </tr>
   </table>
+
 </div>
 </body>
 </html>
