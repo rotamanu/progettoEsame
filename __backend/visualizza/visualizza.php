@@ -27,7 +27,7 @@
   $_SESSION['level']=$row['level'];
   $_SESSION['anteriore']=$row['anteriore'];
   ?>
-  <form method="post" id="modifica" action="../modifica/cambia.php">
+  <form method="post" id="modifica" action="../modifica/modifica.php">
   <div id="page"><table border=3>
       <tr>
           <th>Disegno</th>
@@ -37,7 +37,7 @@
       <tr >
         <td rowspan="6"><img src="<?php echo $_SESSION['disegno']; ?>"</td>
 
-        <td><?php echo $_SESSION['codice'];?></td>
+        <td><input type="text" style="width: 100%; height: 100%;" type="submit" name="codice" form="modifica" value="<?php echo $_SESSION['codice'];?>" readonly></td>
         <td><?php echo $_SESSION['codice_esterno'];?></td>
     </tr>
     <tr>

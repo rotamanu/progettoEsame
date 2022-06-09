@@ -27,8 +27,6 @@ $_SESSION['marca']=$row['marca'];
 $_SESSION['level']=$row['level'];
 $_SESSION['anteriore']=$row['anteriore'];
 ?>
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -46,8 +44,7 @@ $_SESSION['anteriore']=$row['anteriore'];
                 <th>Codice esterno</th>
             </tr>
             <tr >
-              <td rowspan="6"><img src="<?php echo $_SESSION['disegno']; ?>">
-                <input type="file" id="upload" placeholder="disegno" name="disegno" form="insert" required></input></td>
+              <td rowspan="5"><img src="<?php echo $_SESSION['disegno']; ?>"></td>
               <td><input type="text" id="codice" name="codice"  form="insert" value ="<?php echo $_SESSION['codice'];?>"readonly></input></td>
               <td><input type="text" id="codice esterno" name="codice esterno"  form="insert" value ="<?php echo $_SESSION['codice_esterno'];?>"required></input></td>
           </tr>
@@ -65,6 +62,7 @@ $_SESSION['anteriore']=$row['anteriore'];
               <td><input type="text" id="componente c" placeholder="componente c" name="componente c"  form="insert" value ="<?php echo $_SESSION['componente_c'];?>"required></input></td>
             </tr>
             <tr>
+              <td><input type="file" id="upload" placeholder="disegno" name="disegno" form="insert" required></input></td>
               <th> - D - </th>
               <td><input type="text" id="componente d" placeholder="componente d" name="componente d"  form="insert" value ="<?php echo $_SESSION['componente_d'];?>"required></input></td>
               </tr>
@@ -74,8 +72,7 @@ $_SESSION['anteriore']=$row['anteriore'];
                <th>Montato_su</th>
               </tr>
               <tr>
-                <td rowspan="6"><img src="<?php echo $_SESSION['foto']; ?>">
-                  <input type ="file"id="foto" placeholder="foto" name="foto"  form="insert" value ="<?php echo $_SESSION['foto'];?>"required></input><td>
+                <td rowspan="3"><img src="<?php echo $_SESSION['foto']; ?>"></input><td>
                      <?php
                        $my_database=new mysqli("localhost", "root", "", "rotaspa");
                        $stmt=$my_database->prepare("SELECT distinct marca FROM prodotti order by marca");
@@ -115,7 +112,12 @@ $_SESSION['anteriore']=$row['anteriore'];
                       <td><input type="text" id="anteriore" placeholder="anteriore" name="anteriore"  form="insert" value ="<?php echo $_SESSION['anteriore'];?>"required></input></td>
             </tr>
             <tr>
-              <td colspan="3">
+              <td colspan="1">
+                <div style="width: 100%; height: 100%;">
+                <input type="file" id="upload" placeholder="disegno" name="disegno" form="insert" required></input>
+                </div>
+              </td>
+              <td colspan="2">
                 <div style="width: 100%; height: 100%;">
                 <input type="submit" style="width: 100%; height: 100%;" type="submit" name="login" form="insert" value="Modifica kit"></input>
                 </div>
