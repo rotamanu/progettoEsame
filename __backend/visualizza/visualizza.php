@@ -27,6 +27,7 @@
   $_SESSION['level']=$row['level'];
   $_SESSION['anteriore']=$row['anteriore'];
   ?>
+  <form method="post" id="modifica" action="../modifica/cambia.php">
   <div id="page"><table border=3>
       <tr>
           <th>Disegno</th>
@@ -76,7 +77,7 @@
       <tr>
         <td colspan="3">
           <div style="width: 100%; height: 100%;">
-          <input type="submit" style="width: 100%; height: 100%;" type="submit" name="login" form="insert" value="Modifica kit"></input>
+          <input type="submit" style="width: 100%; height: 100%;" type="submit" name="login" form="modifica" value="Modifica kit"></input>
           </div>
         </td>
       </tr>
