@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `utenti` (
 
 INSERT INTO `utenti` (`matricola`, `username`, `password`, `amministratore`) VALUES
 (0, 'Davide', '0123', 0),
-(1, 'Manu', '0000', 1);
+(1, 'Manu', '0002', 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

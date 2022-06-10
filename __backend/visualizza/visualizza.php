@@ -75,14 +75,7 @@
                 <td><?php echo $_SESSION['anteriore'];?></td>
       </tr>
       <tr>
-        <td colspan="3">
-          <div style="width: 100%; height: 100%;">
-          <input type="submit" style="width: 100%; height: 100%;" type="submit" name="login" form="modifica" value="Modifica kit"></input>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="6"><a href="../../_admin/admin.html"><div align="center">Indietro</div></a></td>
+        <th rowspan="1" colspan="2"><a href="../../_noadmin/noadmin.php"><div align="center">Indietro</div></a></th>
       </tr>
   </table>
 
