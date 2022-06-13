@@ -37,7 +37,7 @@ $_SESSION['anteriore']=$row['anteriore'];
     <body>
       <div id="page">
       <form method="post" id="modifica" action="./cambia.html">
-        <table border=3>
+        <table bgcolor=white border=3>
             <tr>
                 <th>Disegno</th>
                 <th>Codice</th>
