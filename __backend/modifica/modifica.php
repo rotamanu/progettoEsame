@@ -7,19 +7,29 @@ $codice=$_POST['codice'];
 $stmt->bind_param('s', $codice);
 $stmt->execute();
 $result=$stmt->get_result();
-$row=$result->fetch_assoc();
-$_SESSION['disegno']=$row['disegno'];
-$_SESSION['foto']=$row['foto'];
-$_SESSION['codice']=$row['codice'];
-$_SESSION['codice_esterno']=$row['codice_esterno'];
-$_SESSION['componente_a']=$row['componente_a'];
-$_SESSION['componente_b']=$row['componente_b'];
-$_SESSION['componente_c']=$row['componente_c'];
-$_SESSION['componente_d']=$row['componente_d'];
-$_SESSION['montato_su']=$row['montato_su'];
-$_SESSION['marca']=$row['marca'];
-$_SESSION['level']=$row['level'];
-$_SESSION['anteriore']=$row['anteriore'];
+if (mysqli_num_rows($result)==0){
+  echo "<script>
+  alert('Codice insistente, stai per essere redirezionato alla pagina principale');
+  window.location.href='../../_admin/admin.html';
+  </script>";
+
+}else{
+  $row=$result->fetch_assoc();
+
+  $_SESSION['disegno']=$row['disegno'];
+  $_SESSION['foto']=$row['foto'];
+  $_SESSION['codice']=$row['codice'];
+  $_SESSION['codice_esterno']=$row['codice_esterno'];
+  $_SESSION['componente_a']=$row['componente_a'];
+  $_SESSION['componente_b']=$row['componente_b'];
+  $_SESSION['componente_c']=$row['componente_c'];
+  $_SESSION['componente_d']=$row['componente_d'];
+  $_SESSION['montato_su']=$row['montato_su'];
+  $_SESSION['marca']=$row['marca'];
+  $_SESSION['level']=$row['level'];
+  $_SESSION['anteriore']=$row['anteriore'];
+
+}
 ?>
 <!DOCTYPE html>
 <html>
