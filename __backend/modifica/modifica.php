@@ -30,7 +30,7 @@ $_SESSION['anteriore']=$row['anteriore'];
 </head>
 <body>
   <div id="page">
-    <form method="post" id="modifica" onSubmit="return confirm('Le modifiche non saranno reversibili?');" action="./cambia.html">
+    <form method="post" id="modifica" onSubmit="return confirm('Le modifiche non saranno reversibili?');" action="./conferma.php">
       <table bgcolor=white border=3>
         <tr>
           <th>Disegno</th>
@@ -40,25 +40,25 @@ $_SESSION['anteriore']=$row['anteriore'];
         <tr >
           <td rowspan="5"><img src="<?php echo $_SESSION['disegno']; ?>"></td>
           <td><input type="text" id="codice" name="codice"  form="insert" value ="<?php echo $_SESSION['codice'];?>"readonly></input></td>
-          <td><input type="text" id="codice esterno" name="codice esterno"  form="insert" value ="<?php echo $_SESSION['codice_esterno'];?>"required></input></td>
+          <td><input type="text" id="codice esterno" name="codice esterno"  form="modifica" value ="<?php echo $_SESSION['codice_esterno'];?>"></input></td>
         </tr>
         <tr>
           <th colspan="2">Componenti</th>
         </tr>
         <tr>
-          <th> - A - </th><td><input type="text" id="componente a" placeholder="componente a" name="componente a" form="insert" value ="<?php echo $_SESSION['componente_a'];?>"required></input></td>
+          <th> - A - </th><td><input type="text" id="componente_a" placeholder="componente_a" name="componente_a" form="modifica" value ="<?php echo $_SESSION['componente_a'];?>"></input></td>
         </tr>
         <tr>
-          <th> - B - </th><td><input type="text" id="componente b" placeholder="componente b" name="componente b" form="insert" value ="<?php echo $_SESSION['componente_b'];?>"required></input></td>
+          <th> - B - </th><td><input type="text" id="componente_b" placeholder="componente_b" name="componente_b" form="modifica" value ="<?php echo $_SESSION['componente_b'];?>"></input></td>
         </tr>
         <tr>
           <th> - C - </th>
-          <td><input type="text" id="componente c" placeholder="componente c" name="componente c"  form="insert" value ="<?php echo $_SESSION['componente_c'];?>"></input></td>
+          <td><input type="text" id="componente_c" placeholder="componente_c" name="componente_c"  form="modifica" value ="<?php echo $_SESSION['componente_c'];?>"></input></td>
         </tr>
         <tr>
-          <td><input type="file" id="upload" placeholder="disegno" name="disegno" form="insert" required></input></td>
+          <td><input type="file" id="upload" placeholder="disegno" name="disegno" form="modifica"></input></td>
           <th> - D - </th>
-          <td><input type="text" id="componente d" placeholder="componente d" name="componente d"  form="insert" value ="<?php echo $_SESSION['componente_d'];?>"></input></td>
+          <td><input type="text" id="componente_d" placeholder="componente_d" name="componente_d"  form="modifica" value ="<?php echo $_SESSION['componente_d'];?>"></input></td>
         </tr>
         <tr>
           <th>Foto</th>
@@ -73,7 +73,7 @@ $_SESSION['anteriore']=$row['anteriore'];
             $stmt->execute();
             $result=$stmt->get_result();
             echo "<div style=\"width: 100%; height: 100%;\">";
-            echo "<select style=\"width: 100%; height: 100%;\" id=\"marca\" placeholder=\"marca\" name=\"marca\" form=\"insert\">";
+            echo "<select style=\"width: 100%; height: 100%;\" id=\"marca\" placeholder=\"marca\" name=\"marca\" form=\"modifica\">";
             while($row=$result->fetch_assoc()){
               echo "<option value=\"".$row['marca']."\">".$row['marca']."</option>";
             }
@@ -88,7 +88,7 @@ $_SESSION['anteriore']=$row['anteriore'];
             $stmt->execute();
             $result=$stmt->get_result();
             echo "<div style=\"width: 100%; height: 100%;\">";
-            echo "<select style=\"width: 100%; height: 100%;\" id=\"montato_su\" placeholder=\"montato_su\" name=\"montato_su\"  form=\"insert\">";
+            echo "<select style=\"width: 100%; height: 100%;\" id=\"montato_su\" placeholder=\"montato_su\" name=\"montato_su\"  form=\"modifica\">";
             while($row=$result->fetch_assoc()){
               echo "<option value=\"".$row['montato_su']."\">".$row['montato_su']."</option>";
             }
@@ -102,13 +102,13 @@ $_SESSION['anteriore']=$row['anteriore'];
           <th>Anteriore</th>
         </tr>
         <tr>
-          <td><input type="text" id="level" placeholder="level" name="level"  form="insert" value ="<?php echo $_SESSION['level'];?>"></input></td>
-          <td><input type="text" id="anteriore" placeholder="anteriore" name="anteriore"  form="insert" value ="<?php echo $_SESSION['anteriore'];?>"></input></td>
+          <td><input type="text" id="level" placeholder="level" name="level"  form="modifica" value ="<?php echo $_SESSION['level'];?>"></input></td>
+          <td><input type="text" id="anteriore" placeholder="anteriore" name="anteriore"  form="modifica" value ="<?php echo $_SESSION['anteriore'];?>"></input></td>
         </tr>
         <tr>
           <td colspan="1">
             <div style="width: 100%; height: 100%;">
-              <input type="file" id="upload" placeholder="disegno" name="disegno" form="insert" required></input>
+              <input type="file" id="upload" placeholder="disegno" name="disegno" form="modifica"></input>
             </div>
           </td>
           <td colspan="2">
