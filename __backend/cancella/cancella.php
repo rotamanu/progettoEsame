@@ -3,7 +3,7 @@
 $servername="localhost";
 $username="root";
 $password="";
-$db="telefonia";
+$db="rotaspa";
 $connessione=mysqli_connect($servername,$username,$password,$db);
 if(!$connessione){
   die("Connessione fallita:".mysqli_connect_error());

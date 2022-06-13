@@ -119,7 +119,7 @@ $_SESSION['anteriore']=$row['anteriore'];
               </td>
               <td colspan="2">
                 <div style="width: 100%; height: 100%;">
-                <input type="submit" style="width: 100%; height: 100%;" type="submit" name="login" form="insert" value="Modifica kit"></input>
+                <a href="cambia.php"><div align="center">modifica</div></a>
                 </div>
               </td>
             </tr>
