@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../../style.css">
     </head>
     <body>
+      <div id="page">
       <form method="post" action="../__backend/visualizza/visualizza.php" id="codice">
         <h1>Visualizzare un kit</h1>
         <?php
@@ -47,5 +48,6 @@
         <h1>Torna alla Home</h1>
         <button type="submit" name="login">indietro</button>
       </form>
+    </div>  
     </body>
 </html>

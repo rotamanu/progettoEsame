@@ -3,7 +3,7 @@ body {
     padding: 10px  20px;*/
     font: 14px 'Open sans', sans-serif;
     /*color: gray;*/
-    background-image: url("./__IMG/blu.gif");
+    background-image: url("../__IMG/blu.gif");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     margin-left: auto;
