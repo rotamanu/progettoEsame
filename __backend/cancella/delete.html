@@ -7,7 +7,7 @@
     </head>
     <body>
     <div id="page">
-      <form  method="post" action="cancella.php">
+      <form  method="post" onSubmit="return confirm('Cancellare kit?');" action="cancella.php">
           <h1 ><font color="white">cancella un kit</h1>
           <input type="text" id="codice" placeholder="codice" name="codice">
           <button type="submit" name="login">Cancella</button>
