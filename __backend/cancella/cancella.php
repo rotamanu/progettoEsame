@@ -11,10 +11,9 @@ if(!$connessione){
 else{
   echo"CONNESSIONE ESEGUITA CON SUCCESSO";
 }
-if (isset($_POST['modello']) AND ($_POST['marca']) ){
-  $modello= $_POST['modello'];
-  $marca= $_POST['marca'];
-  $sql="DELETE FROM prodotti WHERE modello=$modello AND marca=$marca";
+if (isset($_POST['codice'])) ){
+  $codice= $_POST['codice'];
+  $sql="DELETE FROM prodotti WHERE codice=$codice";
   if(mysqli_query($connessione, $sql)){
     echo"record cancellato con successo";
   }else{
@@ -22,7 +21,7 @@ if (isset($_POST['modello']) AND ($_POST['marca']) ){
   }
 }
 else{
-  echo "modello non trovato";
+  echo "codice non trovato";
 }
 
 mysqli_close($connessione);

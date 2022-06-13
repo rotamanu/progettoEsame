@@ -7,7 +7,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../../__IMG/machine.gif");
+  background-image: url("../../__IMG/blu.gif");
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
 }

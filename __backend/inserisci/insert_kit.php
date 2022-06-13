@@ -8,7 +8,7 @@
     <body>
       <div id="page">
       <form method="post" id="insert" action="./inserisci.php">
-        <table border=1>
+        <table border="5" >
             <tr>
                 <th>Disegno</th>
                 <th>Codice</th>
@@ -47,7 +47,7 @@
               <td> - B - </td>
               <td><input type="text" id="componente b" placeholder="componente b" name="componente b" form="insert" required></td>
               <th>Montato_su</th>
-              <th>Anteriore</th>
+              <th>Rear o post</th>
             </tr>
             <tr>
               <td rowspan="2"><input type="file" id="foto" placeholder="foto" name="foto"  form="insert" required></td>
@@ -68,7 +68,7 @@
                   echo "</div>";
                 ?>
                 </td>
-              <td rowspan="2"><input type="text" id="level" placeholder="level" name="level"  form="insert" required></td>
+              <td rowspan="2"><input type="text" id="post" placeholder="rear post" name="post"  form="insert" required></td>
             </tr>
             <tr>
               <td> - D - </td>

@@ -12,16 +12,10 @@ body{
   background-size: 100vw 100vh;
 }
 #insert{
-  background-color: white;
+  background-color: Gainsboro;
 
 }
-td{
-  background-color : white;
-}
-tr{
-  background-color : white;
-}
-
-th{
-    background-color : white;
+form{
+  border: 20px solid
+  background-color:white;
 }

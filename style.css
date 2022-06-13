@@ -3,7 +3,7 @@ body {
     padding: 10px  20px;*/
     font: 14px 'Open sans', sans-serif;
     /*color: gray;*/
-    background-image: url("./__IMG/ingranaggi.gif");
+    background-image: url("./__IMG/blu.gif");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     margin-left: auto;
@@ -42,19 +42,10 @@ button {
   	text-transform: uppercase;
 }
 
-#disegnobg{
-  /*background-color: red;*/
-}
-#tradmin{
-  /*background-color: white;*/
-}
 #page{
   width: 100vw;
   height:100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-#insert{
-
 }

@@ -3,7 +3,7 @@
 <html>
 <head>
   <title>Amministratore</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <?php
@@ -37,7 +37,7 @@
       <tr >
         <td rowspan="6"><img src="<?php echo $_SESSION['disegno']; ?>"</td>
 
-        <td><input type="text" style="width: 100%; height: 100%;" type="submit" name="codice" form="modifica" value="<?php echo $_SESSION['codice'];?>" readonly></td>
+        <td><input type="text" type="submit" name="codice" form="modifica" value="<?php echo $_SESSION['codice'];?>" readonly></td>
         <td><?php echo $_SESSION['codice_esterno'];?></td>
     </tr>
     <tr>
