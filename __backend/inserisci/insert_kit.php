@@ -68,7 +68,7 @@
                   echo "</div>";
                 ?>
                 </td>
-              <td rowspan="2"><input type="text" id="post" placeholder="rear post" name="post"  form="insert" required></td>
+              <td rowspan="2"><input type="text" id="post" placeholder="rear post" name="anteriore"  form="insert" required></td>
             </tr>
             <tr>
               <td> - D - </td>

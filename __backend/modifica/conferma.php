@@ -8,7 +8,7 @@ $updateD=$_POST['componente_d'];
 $updateCodCli=$_POST['codice_esterno'];
 
 $my_database=new mysqli("localhost", "root", "", "rotaspa");
-$stmt=$my_database->prepare("UPDATE prodotti SET componente_a=? AND componente_b=? AND componente_c=? AND componente_d=? AND codice_esterno=? WHERE codice=?");
+$stmt=$my_database->prepare("UPDATE prodotti SET componente_a=?, componente_b=? , componente_c=? , componente_d=? , codice_esterno=? WHERE codice=?");
 $stmt->bind_param('ssssss', $updateA, $updateB, $updateC, $updateD, $updateCodCli, $codice);
 $stmt->execute();
 echo "<script>
