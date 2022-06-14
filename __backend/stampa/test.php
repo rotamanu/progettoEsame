@@ -1,4 +1,5 @@
 <?PHP
+session_start();
 require('code128.php');
 $pdf = new PDF_Label('L7163');
 $pdf->AddPage();
