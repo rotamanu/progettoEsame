@@ -13,7 +13,7 @@ $row=$result->fetch_assoc();
 // Print labels
 $num_etichette=$_POST['num_etichette'];
 for($i=1;$i<=$num_etichette;$i++) {
-    $text = sprintf("Cod. %s\nC.Es. %s\nMatricola: %s\nMounted on: %s\n%s Marca: %s; %s", $row['codice'], $row['codice_esterno'], $_SESSION['matricola_utente'], $row['montato_su'], $row['anteriore'], $row['marca'], 'MADE IN ITALY');
+    $text = sprintf("Cod. %s\nC.Es. %s\nMatr: %s\nMounted on: %s\n%s Marca: %s; %s", $row['codice'], $row['codice_esterno'], $_SESSION['matricola_utente'], $row['montato_su'], $row['anteriore'], $row['marca'], 'MADE IN ITALY');
     $pdf->Add_Label($text);
 }
 ob_start();
