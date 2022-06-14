@@ -50,7 +50,7 @@ if (mysqli_num_rows($result)==0){
         <tr >
           <td rowspan="5"><img src="<?php echo $_SESSION['disegno']; ?>"></td>
           <td><input type="text" id="codice" name="codice"  form="insert" value ="<?php echo $_SESSION['codice'];?>"readonly></input></td>
-          <td><input type="text" id="codice esterno" name="codice esterno"  form="modifica" value ="<?php echo $_SESSION['codice_esterno'];?>"></input></td>
+          <td><input type="text" id="codice_esterno" name="codice_esterno"  form="modifica" value ="<?php echo $_SESSION['codice_esterno'];?>"></input></td>
         </tr>
         <tr>
           <th colspan="2">Componenti</th>
